@@ -1,0 +1,79 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --border-color: #dbdbdb;
+    --text-color: #333;
+    --star-gold-color: #ffce3e;
+    --primary-orange-color: #fa9e1b;
+    --primary-violet-color: #8d4fff;
+    --navbar-height: 34px;
+    --header-topbar-height: 36px;
+    --header-height: 136px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}   
+
+body {
+    margin: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Growth {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes searchSideIn {
+    from {
+        top: 102px;
+        opacity: 0;
+    }
+    to {
+        top: 72;
+        opacity: 1;
+    }
+}
+
+/* @keyframes translateColor {
+    from {
+        background-image: linear-gradient(to center, #fa9e1b, #8d4fff);
+
+    }
+    to {
+        background-image: linear-gradient(to left, #fa9e1b, #8d4fff);
+    }
+} */
+
+@keyframes translateColor {
+    from {
+        right: 0;
+    }
+    to {
+        transform: translateX(-300%);
+    }
+}
+
