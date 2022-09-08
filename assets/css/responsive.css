@@ -1,0 +1,182 @@
+/* Mobile & Tablet & PC Low resolution*/
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    /* Header */
+    .header {
+        height: calc(var(--header-height) - var(--header-topbar-height));
+    }
+
+    .header__search {
+        display: flex;
+    }
+
+    .header__search-input {
+        top: 24px;
+        right: -36px;
+    }
+
+    .header__subNavbar {
+        display: block;
+    }
+
+    /* Container Search */
+    .container__search {
+        height: auto;
+        padding: 100px 0; 
+    }
+
+    .container__search-content {
+        height: auto;
+    }
+
+    .container__input {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container__input-list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container__input-item {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container__input-button {
+        float: left;
+    }
+
+    .container__search-list {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        margin-top: 100px;
+        z-index: 1;
+    }
+
+    .container__search-item {
+        width: 100%;
+    }
+
+    .container__input-item-action {
+        width: 100%;
+    }
+
+    .container__search-item:first-child {
+        border-top-left-radius: 0;
+    }
+
+    .container__search-item:last-child {
+        border-top-right-radius: 0;
+    }
+
+    .container__search-link {
+        height: 64px;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+    }
+
+    /*  */
+
+    .container__content-intro--item {
+        height: 800px;
+        margin-bottom: 40px;
+    }
+
+    .container__content-intro--text {
+        margin: 0;
+    }
+
+    /*  */
+
+    .intro__item-content--button {
+        top: 85%;
+    }
+
+    @keyframes searchSideIn {
+        from {
+            top: 60px;
+            opacity: 0;
+        }
+        to {
+            top: 24px;
+            opacity: 1;
+        }
+    }
+}
+
+/* Tablet */
+@media  (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .container__slider-lable {
+        font-size: 8rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) { 
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .padding-on-mobile {
+        padding: 0 20px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .header__logo-lable {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+    .header__logo-img {
+        zoom: 0.6;
+    }
+
+    .header__navigation {
+        height: 60px;
+    }
+
+    .container__slider-lable {
+        font-size: 5rem;
+    }
+
+    .container__search {
+        padding: 100px 20px;
+    }
+
+    .container__content-intro {
+ 
+        padding: 100px 20px;
+    }
+
+    .container__offer-content--icon {
+        margin: 40px 0;
+    }
+
+    .footer {
+        padding: 100px 20px;
+    }
+
+    .header__subNavbar--layout {
+        margin-left: -20px;
+    }
+}

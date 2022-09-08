@@ -49,31 +49,11 @@ body {
 
 @keyframes searchSideIn {
     from {
-        top: 102px;
+        top: 36px;
         opacity: 0;
     }
     to {
-        top: 72;
+        top: 4px;
         opacity: 1;
     }
 }
-
-/* @keyframes translateColor {
-    from {
-        background-image: linear-gradient(to center, #fa9e1b, #8d4fff);
-
-    }
-    to {
-        background-image: linear-gradient(to left, #fa9e1b, #8d4fff);
-    }
-} */
-
-@keyframes translateColor {
-    from {
-        right: 0;
-    }
-    to {
-        transform: translateX(-300%);
-    }
-}
-

@@ -18,10 +18,10 @@
 
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header padding-on-mobile">
             <div class="grid wide">
                 <!-- Header Topbar -->
-                <div class="header__topbar">
+                <div class="header__topbar hide-on-mobile-tablet">
                     <div class="header__infomation">
                         <span class="header__info-phone">
                             +84776974310
@@ -49,6 +49,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="header__action">
                         <div class="header__action-item">
                             <a href="" class="header__action-link">LOGIN</a>
@@ -67,7 +68,8 @@
                             <span class="header__logo-lable">TRAVELIX</span>
                         </a>
                     </div>
-                    <div class="header__navbar">
+
+                    <div class="header__navbar hide-on-mobile-tablet">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item header__navbar-item--active">
                                 <a href="" class="header__navbar-link">HOME</a>
@@ -85,25 +87,50 @@
                                 <a href="" class="header__navbar-link">CONTACT</a>
                             </li>
                         </ul>
-                        <input type="checkbox" hidden class="header__search-form-checked" id="header__search-form-check">
-                        <form class="header__search-form">
-                            <input type="search" class="header__search-input" placeholder="Search...">
-                        </form>
                     </div>
                     
                     <label for="header__search-form-check" class="header__search">
                         <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
-                    </label>   
+                        <input type="checkbox" hidden class="header__search-form-checked" id="header__search-form-check">
+                        <form class="header__search-form">
+                            <input type="search" class="header__search-input" placeholder="Search...">
+                        </form>
+
+                        <label for="header__subNavbar-form-check" class="header__subNavbar">
+                            <i class="header__subNavbar-icon fa-solid fa-bars"></i>
+                        </label> 
+                    </label> 
                 </div>
+            </div>
+            
+            <input type="checkbox" hidden class="header__subNavbar-form-checked" id="header__subNavbar-form-check">
+            <div class="header__subNavbar--layout">
+                <div class="header__subNavbar--layout-img">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="header__subNavbar--layout-content">
+                    <span class="header__subNavbar--layout-text">home</span>
+                    <span class="header__subNavbar--layout-text">about us</span>
+                    <span class="header__subNavbar--layout-text">offers</span>
+                    <span class="header__subNavbar--layout-text">news</span>
+                    <span class="header__subNavbar--layout-text">contact</span>
+                </div>
+
+                <input type="checkbox" hidden class="header__subNavbar-form-checked" id="header__subNavbar-form-check">             
+                <label for="header__subNavbar-form-check" class="header__subNavbar">
+                    <i class="header__subNavbar--layout-icon fa-solid fa-xmark"></i>
+                </label> 
+                
             </div>
         </header>
 
         <!-- Container -->
-        <div class="container">
+        <div class="container ">
             <!-- Container Home -->
             <div class="container__home">
                 <div class="container__slider">
                     <div class="container__slider-background" style="background-image: url(./assets/img/karthik-sreenivas-1cTNbip1_qw-unsplash.jpg);"></div>
+                    
                     <div class="container__slider-content">
                         <h1 class="container__slider-lable">DISCOVER</h1>
                         <h1 class="container__slider-lable container__slider-lable--styte">Viet Nam</h1>
@@ -114,7 +141,7 @@
                         </div>
                     </div>
 
-                    <div class="container__action">
+                    <div class="container__action hide-on-mobile-tablet">
                         <div class="container__action-pre">
                             <i class="container__action-icon fa-solid fa-angle-left"></i>
                         </div>
@@ -129,44 +156,6 @@
             <div class="container__search">
                 <div class="grid wide">
                     <div class="container__search-content">
-                        <div class="container__input">
-                            <div class="container__input-list">
-                                <div class="container__input-item">
-                                    <span class="container__input-item-lable">DESTINATION</span>
-                                    <input type="text" class="container__input-item-action">
-                                </div>
-                                <div class="container__input-item">
-                                    <span class="container__input-item-lable">CHECK IN</span>
-                                    <input type="text" class="container__input-item-action" placeholder="YY-MM-DDDD">
-                                </div>
-                                <div class="container__input-item">
-                                    <span class="container__input-item-lable">CHECK OUT</span>
-                                    <input type="text" class="container__input-item-action" placeholder="YY-MM-DDDD">
-                                </div>
-                                <div class="container__input-item">
-                                    <span class="container__input-item-lable">ADULTS</span>
-                                    <select name="selects" id="" class="container__input-item-select">
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                    </select>
-                                </div>
-                                <div class="container__input-item">
-                                    <span class="container__input-item-lable">CHILDREN</span>
-                                    <select name="selects" id="" class="container__input-item-select">
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="container__input-button">
-                                <a href="#" class="container__input-search">
-                                    SEARCH
-                                </a> 
-                            </div>
-                        </div>
-
                         <div class="container__search-list">
                             <div class="container__search-item container__search-item--active">
                                 <a href="" class="container__search-link">
@@ -187,9 +176,10 @@
                                 </a>
                             </div>
                             <div class="container__search-item">
-                                <a href="" class="container__search-link"></a>
-                                <i class="container__search-item-icon fa-solid fa-umbrella-beach"></i>
-                                <span class="container__search-item-lable">TRIPS</span>
+                                <a href="" class="container__search-link">
+                                    <i class="container__search-item-icon fa-solid fa-umbrella-beach"></i>
+                                    <span class="container__search-item-lable">TRIPS</span>
+                                </a>
                             </div>
                             <div class="container__search-item">
                                 <a href="" class="container__search-link">
@@ -202,6 +192,66 @@
                                     <i class="container__search-item-icon fa-solid fa-person-hiking"></i>
                                     <span class="container__search-item-lable">ACTIVITIES</span>
                                 </a>
+                            </div>
+                        </div>
+
+                        <div class="container__input">
+                            <div class="row">
+                                <div class="col l-10 m-12 c-12">
+                                    <div class="container__input-list">
+                                        <div class="row">
+                                            <div class="col l-4 m-12 c-12">
+                                                <div class="container__input-item">
+                                                    <span class="container__input-item-lable">DESTINATION</span>
+                                                    <input type="text" class="container__input-item-action">
+                                                </div>
+                                            </div>
+
+                                            <div class="col l-2 m-12 c-12">
+                                                <div class="container__input-item">
+                                                    <span class="container__input-item-lable">CHECK IN</span>
+                                                    <input type="text" class="container__input-item-action" placeholder="YY-MM-DDDD">
+                                                </div>
+                                            </div>
+
+                                            <div class="col l-2 m-12 c-12">
+                                                <div class="container__input-item">
+                                                    <span class="container__input-item-lable">CHECK OUT</span>
+                                                    <input type="text" class="container__input-item-action" placeholder="YY-MM-DDDD">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col l-2 m-12 c-12">
+                                                <div class="container__input-item">
+                                                    <span class="container__input-item-lable">ADULTS</span>
+                                                    <select name="selects" id="" class="container__input-item-select">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col l-2 m-12 c-12">
+                                                <div class="container__input-item">
+                                                    <span class="container__input-item-lable">CHILDREN</span>
+                                                    <select name="selects" id="" class="container__input-item-select">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2 m-12 c-12">
+                                    <div class="container__input-button">
+                                        <a href="#" class="container__input-search">
+                                            SEARCH
+                                        </a> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>           
@@ -221,7 +271,7 @@
                             </p>
                             <div class="container__content-intro--list">
                                 <div class="row">
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-12 c-12">
                                         <div class="container__content-intro--item">
                                             <div class="intro__item-content--overlay"></div>
                                             <div class="intro__item-content--img" style="background-image: url(./assets/img/Ruong.jpg);"></div>
@@ -249,7 +299,7 @@
                                         </div>
                                     </div>
     
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-12 c-12">
                                         <div class="container__content-intro--item">
                                             <div class="intro__item-content--overlay"></div>
                                             <div class="intro__item-content--img" style="background-image: url(./assets/img/DN.jpg);"></div>
@@ -277,7 +327,7 @@
                                         </div>
                                     </div>
     
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-12 c-12">
                                         <div class="container__content-intro--item">
                                             <div class="intro__item-content--overlay"></div>
                                             <div class="intro__item-content--img" style="background-image: url(./assets/img/moutain.jpg);"></div>
@@ -507,7 +557,7 @@
                             <h1 class="container__content-intro--title">WHAT OUR CLIENTS SAY ABOUT US</h1>
                             <div class="container__instructor--list">
                                 <div class="row">
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-6 c-0">
                                         <div class="container__instructor--item">
                                             <div class="container__instructor--icon">
                                                 <img src="./assets/img/balo.png" alt="">
@@ -529,7 +579,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-6 c-12">
                                         <div class="container__instructor--item">
                                             <div class="container__instructor--icon">
                                                 <img src="./assets/img/island.png" alt="">
@@ -551,7 +601,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-4">
+                                    <div class="col l-4 m-0 c-0">
                                         <div class="container__instructor--item">
                                             <div class="container__instructor--icon">
                                                 <img src="./assets/img/kayak.png" alt="">
@@ -585,7 +635,7 @@
                             <h1 class="container__content-intro--title">TRENDING NOW</h1>
                             <div class="container__trending--list">
                                 <div class="row">
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_1.png" alt="" class="container__trending--img">
                                             
@@ -597,7 +647,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_2.png" alt="" class="container__trending--img">
                                             
@@ -609,7 +659,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_3.png" alt="" class="container__trending--img">
                                             
@@ -621,7 +671,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_4.png" alt="" class="container__trending--img">
                                             
@@ -633,7 +683,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_5.png" alt="" class="container__trending--img">
                                             
@@ -645,7 +695,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_6.png" alt="" class="container__trending--img">
                                             
@@ -657,7 +707,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_7.png" alt="" class="container__trending--img">
                                             
@@ -669,7 +719,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col l-3">
+                                    <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_8.png" alt="" class="container__trending--img">
                                             
@@ -688,33 +738,33 @@
                       
                 <!-- Container Contact -->
                 <div class="container__content-layout">
-                    <div class="container__contact">
+                    <div class="container__contact padding-on-mobile">
                         <div class="container__contact--background" style="background-image: url(./assets/img/contact.png) ;"></div>
                         <div class="grid wide">
                             <div class="row">
-                                <div class="col l-6">
+                                <div class="col l-6 m-0 c-0">
                                 </div>
-                                <div class="col l-6">
+                                <div class="col l-6 m-12 c-12">
                                     <div class="container__contact--form">
                                         <span class="container__contact--form-lable">GET IN TOUCH</span>
 
                                         <form action="" class="container__contact--form-content">
                                             <div class="row">
-                                                <div class="container__contact--form-name col l-6">
+                                                <div class="container__contact--form-name col l-6 m-6 c-12  ">
                                                     <input type="text" class="container__contact--form-item container__contact--form-name" placeholder="Name" required="required" data-error="Name is required.">
                                                 </div>
 
-                                                <div class="col l-6">
+                                                <div class="col l-6 m-6 c-12">
                                                     <input type="text" class="container__contact--form-item container__contact--form-mail" placeholder="E-Mail" required="required" data-error="Name is required.">
                                                 </div>    
                                             </div>
                                             <div class="row">
-                                                <div class="col l-12">
+                                                <div class="col l-12 m-12 c-12">
                                                     <input type="text" class="container__contact--form-item container__contact--form-subject" placeholder="Subject" required="required" data-error="Name is required.">
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col l-12">
+                                                <div class="col l-12 m-12 c-12">
                                                     <textarea type="text" class="container__contact--form-item container__contact--form-massage" placeholder="Massage" required="required" data-error="Name is required."></textarea>
                                                 </div>
                                             </div>
@@ -740,7 +790,7 @@
         <footer class="footer">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-3">
+                    <div class="col l-3 m-12 c-12">
                         <div class="footer__about">
                             <div class="footer__about--logo">
                                 <img src="./assets/img/logo.png" alt="" class="footer__about--logo-img">
@@ -774,7 +824,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-3">
+                    <div class="col l-3 m-12 c-12">
                         <div class="footer__blog">
                             <div class="footer__blog--lable">
                                 <span class="footer__blog--text">BLOG POSTS</span>
@@ -807,7 +857,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-3">
+                    <div class="col l-3 m-12 c-12">
                         <div class="footer__tags">
                             <div class="footer__tags--lable">
                                 <span class="footer__tags--text">TAGS</span>
@@ -842,7 +892,7 @@
                         </div>
                     </div>
 
-                    <div class="col l-3">
+                    <div class="col l-3 m-12 c-12">
                         <div class="footer__contact">
                             <div class="footer__contact--lable">
                                 <span class="footer__contact--text">CONTACT INFO</span>
