@@ -89,6 +89,10 @@
         padding-left: 25px;
     }
 
+    .container__trending--item {
+        justify-content: center;
+    }
+
     /*  */
 
     .container__content-intro--item {
@@ -105,6 +109,8 @@
     .intro__item-content--button {
         top: 85%;
     }
+
+    
 
     @keyframes searchSideIn {
         from {
