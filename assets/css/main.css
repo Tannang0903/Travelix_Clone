@@ -3,7 +3,7 @@
     position: fixed;
     height: var(--header-height);
     background: rgba(54, 19, 84, 0.7);
-    z-index: 10;
+    z-index: 90;
     width: 100%;
 }
 
