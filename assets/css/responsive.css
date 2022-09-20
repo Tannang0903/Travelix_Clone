@@ -1,3 +1,11 @@
+
+/* PC Low resolution */
+@media (max-width: 1239px) {
+    .container__offer-content--icon {
+        margin: 40px 0 70px;
+    }
+}
+
 /* Mobile & Tablet & PC Low resolution*/
 @media (max-width: 1023px) {
     .hide-on-mobile-tablet {
@@ -183,12 +191,5 @@
 
     .header__subNavbar--layout {
         margin-left: -20px;
-    }
-}
-
-/* PC Low resolution */
-@media (max-width: 1239px) {
-    .container__offer-content--icon {
-        margin: 40px 0 70px;
     }
 }
