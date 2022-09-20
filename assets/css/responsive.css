@@ -15,7 +15,7 @@
 
     .header__search-input {
         top: 24px;
-        right: -36px;
+
     }
 
     .header__subNavbar {
@@ -25,7 +25,7 @@
     /* Container Search */
     .container__search {
         height: auto;
-        padding: 100px 0; 
+        padding: 100px 0;
     }
 
     .container__search-content {
@@ -86,14 +86,11 @@
         text-align: left;
         display: flex;
         align-items: center;
-        padding-left: 25px;
     }
 
     .container__trending--item {
         justify-content: center;
     }
-
-    /*  */
 
     .container__content-intro--item {
         height: 800px;
@@ -104,19 +101,16 @@
         margin: 0;
     }
 
-    /*  */
-
     .intro__item-content--button {
         top: 85%;
     }
-
-    
 
     @keyframes searchSideIn {
         from {
             top: 60px;
             opacity: 0;
         }
+
         to {
             top: 24px;
             opacity: 1;
@@ -125,7 +119,7 @@
 }
 
 /* Tablet */
-@media  (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-tablet {
         display: none;
     }
@@ -136,7 +130,7 @@
 }
 
 /* Mobile */
-@media (max-width: 739px) { 
+@media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
     }
@@ -153,6 +147,7 @@
         font-size: 1.6rem;
         line-height: 1.6rem;
     }
+
     .header__logo-img {
         zoom: 0.6;
     }
@@ -165,12 +160,16 @@
         font-size: 5rem;
     }
 
+    .container__slider-lable--styte {
+        font-size: 7rem;
+    }
+
     .container__search {
         padding: 100px 20px;
     }
 
     .container__content-intro {
- 
+
         padding: 100px 20px;
     }
 
@@ -184,5 +183,12 @@
 
     .header__subNavbar--layout {
         margin-left: -20px;
+    }
+}
+
+/* PC Low resolution */
+@media (max-width: 1239px) {
+    .container__offer-content--icon {
+        margin: 40px 0 70px;
     }
 }

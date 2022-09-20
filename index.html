@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
-        <title>Travelix</title>
+        <title>Travelix_Clone</title>
     </head>
 
     <body>
@@ -23,27 +23,27 @@
                 <!-- Header Topbar -->
                 <div class="header__topbar hide-on-mobile-tablet">
                     <div class="header__infomation">
-                        <span class="header__info-phone">
+                        <p class="header__info-phone">
                             +84776974310
-                        </span>
+                        </p>
                         <ul class="header__info-list">
                             <li class="header__info-item">
-                                <a href="" class="header__info-link">
+                                <a href="#!" class="header__info-link">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
                             </li>
                             <li class="header__info-item">
-                                <a href="" class="header__info-link">
+                                <a href="#!" class="header__info-link">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                             <li class="header__info-item">
-                                <a href="" class="header__info-link">
+                                <a href="#!" class="header__info-link">
                                     <i class="fa-brands fa-twitter"></i>
                                 </a>
                             </li>
                             <li class="header__info-item">
-                                <a href="" class="header__info-link">
+                                <a href="#!" class="header__info-link">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                             </li>
@@ -52,10 +52,10 @@
 
                     <div class="header__action">
                         <div class="header__action-item">
-                            <a href="" class="header__action-link">LOGIN</a>
+                            <a href="#!" class="header__action-link">LOGIN</a>
                         </div>
                         <div class="header__action-item">
-                            <a href="" class="header__action-link">REGISTER</a>
+                            <a href="#!" class="header__action-link">REGISTER</a>
                         </div>  
                     </div>
                 </div>
@@ -63,57 +63,63 @@
                 <!-- Header Navigation -->
                 <div class="header__navigation">
                     <div class="header__logo">
-                        <a href="/" class="header__logo-link">
-                            <img src="./assets/img/logo.png" alt="" class="header__logo-img">
-                            <span class="header__logo-lable">TRAVELIX</span>
+                        <a href="#!" class="header__logo-link">
+                            <img src="./assets/img/logo.png" alt="logo_travelix" class="header__logo-img">
+                            <p class="header__logo-lable">TRAVELIX</p>
                         </a>
                     </div>
 
                     <div class="header__navbar hide-on-mobile-tablet">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item header__navbar-item--active">
-                                <a href="" class="header__navbar-link">HOME</a>
+                                <a href="#!" class="header__navbar-link">HOME</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="" class="header__navbar-link">ABOUT US</a>
+                                <a href="#!" class="header__navbar-link">ABOUT US</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="" class="header__navbar-link">OFFERS</a>
+                                <a href="#!" class="header__navbar-link">OFFERS</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="" class="header__navbar-link">NEWS</a>
+                                <a href="#!" class="header__navbar-link">NEWS</a>
                             </li>
                             <li class="header__navbar-item">
-                                <a href="" class="header__navbar-link">CONTACT</a>
+                                <a href="#!" class="header__navbar-link">CONTACT</a>
                             </li>
                         </ul>
                     </div>
                     
-                    <label for="header__search-form-check" class="header__search">
-                        <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
-                        <input type="checkbox" hidden class="header__search-form-checked" id="header__search-form-check">
-                        <form class="header__search-form">
-                            <input type="search" class="header__search-input" placeholder="Search...">
-                        </form>
+                    <div class="header__search">
+                        <label for="header__search-form-check" class="header__search-lable">
+                            <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                        </label>
 
                         <label for="header__subNavbar-form-check" class="header__subNavbar">
                             <i class="header__subNavbar-icon fa-solid fa-bars"></i>
                         </label> 
-                    </label> 
+                        
+                        <input type="checkbox" hidden class="header__search-form-checked" id="header__search-form-check">
+                        <form class="header__search-form">
+                            <input type="search" class="header__search-input" placeholder="Search...">
+                        </form>
+                    </div>
                 </div>
             </div>
             
+            <!-- SubNav -->
             <input type="checkbox" hidden class="header__subNavbar-form-checked" id="header__subNavbar-form-check">
             <div class="header__subNavbar--layout">
                 <div class="header__subNavbar--layout-img">
-                    <img src="./assets/img/logo.png" alt="">
+                    <img src="./assets/img/logo.png" alt="logo_travelix">
                 </div>
                 <div class="header__subNavbar--layout-content">
-                    <span class="header__subNavbar--layout-text">home</span>
-                    <span class="header__subNavbar--layout-text">about us</span>
-                    <span class="header__subNavbar--layout-text">offers</span>
-                    <span class="header__subNavbar--layout-text">news</span>
-                    <span class="header__subNavbar--layout-text">contact</span>
+                    <ul class="header__subNavbar--layout-list">
+                        <li class="header__subNavbar--layout-item">home</li>
+                        <li class="header__subNavbar--layout-item">about us</li>
+                        <li class="header__subNavbar--layout-item">offers</li>
+                        <li class="header__subNavbar--layout-item">news</li>
+                        <li class="header__subNavbar--layout-item">contact</li>
+                    </ul>
                 </div>
 
                 <input type="checkbox" hidden class="header__subNavbar-form-checked" id="header__subNavbar-form-check">             
@@ -128,15 +134,12 @@
             <!-- Container Home -->
             <div class="container__home">
                 <div class="container__slider">
-                    <div class="container__slider-background" style="background-image: url(./assets/img/karthik-sreenivas-1cTNbip1_qw-unsplash.jpg);"></div>
-                    
+                    <div class="container__slider-background" style="background-image: url(./assets/img/background_header.jpg);"></div>                  
                     <div class="container__slider-content">
                         <h1 class="container__slider-lable">DISCOVER</h1>
-                        <h1 class="container__slider-lable container__slider-lable--styte">Viet Nam</h1>
+                        <p class="container__slider-lable--styte">Viet Nam</p>
                         <div class="container__slider-button">
-                            <a href="#" class="container__slider-link">
-                                EXPLORE NOW
-                            </a> 
+                            <a href="#!" class="container__slider-link">EXPLORE NOW</a> 
                         </div>
                     </div>
 
@@ -157,98 +160,95 @@
                     <div class="container__search-content">
                         <div class="container__search-list">
                             <div class="container__search-item container__search-item--active">
-                                <a href="" class="container__search-link">
+                                <a href="#!" class="container__search-link">
                                     <i class="container__search-item-icon fa-solid fa-cart-flatbed-suitcase"></i>
-                                    <span class="container__search-item-lable">HOTELS</span>
+                                    <p class="container__search-item-lable">HOTELS</p>
                                 </a>
                             </div>
                             <div class="container__search-item">
-                                <a href="" class="container__search-link">
+                                <a href="#!" class="container__search-link">
                                     <i class="container__search-item-icon fa-solid fa-car-side"></i>
-                                    <span class="container__search-item-lable">CAR RENTALS</span>
+                                    <p class="container__search-item-lable">CAR RENTALS</p>
                                 </a>
                             </div>
                             <div class="container__search-item">
-                                <a href="" class="container__search-link">
+                                <a href="#!" class="container__search-link">
                                     <i class="container__search-item-icon fa-solid fa-plane-departure"></i>
-                                    <span class="container__search-item-lable">FLIGHTS</span>
+                                    <p class="container__search-item-lable">FLIGHTS</p>
                                 </a>
                             </div>
                             <div class="container__search-item">
-                                <a href="" class="container__search-link">
+                                <a href="#!" class="container__search-link">
                                     <i class="container__search-item-icon fa-solid fa-umbrella-beach"></i>
-                                    <span class="container__search-item-lable">TRIPS</span>
+                                    <p class="container__search-item-lable">TRIPS</p>
                                 </a>
                             </div>
                             <div class="container__search-item">
-                                <a href="" class="container__search-link">
+                                <a href="#!" class="container__search-link">
                                     <i class="container__search-item-icon fa-solid fa-ship"></i>
-                                    <span class="container__search-item-lable">CRUISES</span>
+                                    <p class="container__search-item-lable">CRUISES</p>
                                 </a>
                             </div>
                             <div class="container__search-item-icon container__search-item">
-                                <a href="" class="container__search-link">
+                                <a href="#!" class="container__search-link">
                                     <i class="container__search-item-icon fa-solid fa-person-hiking"></i>
-                                    <span class="container__search-item-lable">ACTIVITIES</span>
+                                    <p class="container__search-item-lable">ACTIVITIES</p>
                                 </a>
                             </div>
                         </div>
 
                         <div class="container__input">
-                            <div class="row">
-                                <div class="col l-10 m-12 c-12">
-                                    <div class="container__input-list">
-                                        <div class="row">
-                                            <div class="col l-4 m-12 c-12">
-                                                <div class="container__input-item">
-                                                    <span class="container__input-item-lable">DESTINATION</span>
-                                                    <input type="text" class="container__input-item-action">
+                            <div class="grid wide">
+                                <div class="row">
+                                    <div class="col l-10 m-12 c-12">
+                                        <div class="container__input-list">
+                                            <div class="row">
+                                                <div class="col l-4 m-12 c-12">
+                                                    <div class="container__input-item">
+                                                        <span class="container__input-item-lable">DESTINATION</span>
+                                                        <input type="text" class="container__input-item-action">
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="col l-2 m-12 c-12">
-                                                <div class="container__input-item">
-                                                    <span class="container__input-item-lable">CHECK IN</span>
-                                                    <input type="text" class="container__input-item-action" placeholder="YY-MM-DDDD">
+                                                <div class="col l-2 m-12 c-12">
+                                                    <div class="container__input-item">
+                                                        <span class="container__input-item-lable">CHECK IN</span>
+                                                        <input type="text" class="container__input-item-action" placeholder="YY-MM-DDDD">
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="col l-2 m-12 c-12">
-                                                <div class="container__input-item">
-                                                    <span class="container__input-item-lable">CHECK OUT</span>
-                                                    <input type="text" class="container__input-item-action" placeholder="YY-MM-DDDD">
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col l-2 m-12 c-12">
-                                                <div class="container__input-item">
-                                                    <span class="container__input-item-lable">ADULTS</span>
-                                                    <select name="selects" id="" class="container__input-item-select">
-                                                        <option value="">1</option>
-                                                        <option value="">2</option>
-                                                        <option value="">3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col l-2 m-12 c-12">
-                                                <div class="container__input-item">
-                                                    <span class="container__input-item-lable">CHILDREN</span>
-                                                    <select name="selects" id="" class="container__input-item-select">
-                                                        <option value="">1</option>
-                                                        <option value="">2</option>
-                                                        <option value="">3</option>
-                                                    </select>
+                                                <div class="col l-2 m-12 c-12">
+                                                    <div class="container__input-item">
+                                                        <span class="container__input-item-lable">CHECK OUT</span>
+                                                        <input type="text" class="container__input-item-action" placeholder="YY-MM-DDDD">
+                                                    </div>
+                                                </div>                                 
+                                                <div class="col l-2 m-12 c-12">
+                                                    <div class="container__input-item">
+                                                        <span class="container__input-item-lable">ADULTS</span>
+                                                        <select name="select_adults" id="selects__option--adults" class="container__input-item-select">
+                                                            <option value="">1</option>
+                                                            <option value="">2</option>
+                                                            <option value="">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>                                           
+                                                <div class="col l-2 m-12 c-12">
+                                                    <div class="container__input-item">
+                                                        <span class="container__input-item-lable">CHILDREN</span>
+                                                        <select name="select_children" id="selects__option--children" class="container__input-item-select">
+                                                            <option value="">1</option>
+                                                            <option value="">2</option>
+                                                            <option value="">3</option>
+                                                        </select>   
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col l-2 m-12 c-12">
-                                    <div class="container__input-button">
-                                        <a href="#" class="container__input-search">
-                                            SEARCH
-                                        </a> 
+
+                                    <div class="col l-2 m-12 c-12">
+                                        <div class="container__input-button">
+                                            <a href="#!" class="container__input-search">SEARCH</a> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -263,7 +263,7 @@
                 <div class="container__content-layout">
                     <div class="grid wide">
                         <div class="container__content-intro">
-                            <h1 class="container__content-intro--title">We have the best tours</h1>
+                            <h2 class="container__content-intro--title">We have the best tours</h2>
                             <p class="container__content-intro--text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.      
                                 Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
@@ -275,12 +275,10 @@
                                             <div class="intro__item-content--overlay"></div>
                                             <div class="intro__item-content--img" style="background-image: url(./assets/img/intro_1.jpg);"></div>
                                             <div class="intro__item-content--time">
-                                               <span class="intro__item-content--time--text">
-                                                May 25th - June 01st
-                                               </span>
+                                               <span class="intro__item-content--time--text">May 25th - June 01st</span>
                                             </div>
                                             <div class="intro__item-content">
-                                                <h2 class="intro__item-content--lable">Yen Bai</h2>
+                                                <h3 class="intro__item-content--lable">Ninh Binh</h3>
                                                 <p class="intro__item-content--price">From $1450</p>
                                                 <div class="intro__item-content--rating">
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
@@ -291,9 +289,7 @@
                                                 </div>
                                             </div>
                                             <div class="intro__item-content--button">
-                                                <a href="#" class="intro__item-content--link">
-                                                    SEE MORE
-                                                </a> 
+                                                <a href="#!" class="intro__item-content--link">SEE MORE</a> 
                                             </div>
                                         </div>
                                     </div>
@@ -303,12 +299,10 @@
                                             <div class="intro__item-content--overlay"></div>
                                             <div class="intro__item-content--img" style="background-image: url(./assets/img/intro_2.jpg);"></div>
                                             <div class="intro__item-content--time">
-                                               <span class="intro__item-content--time--text">
-                                                May 25th - June 01st
-                                               </span>
+                                               <span class="intro__item-content--time--text">May 25th - June 01st</span>
                                             </div>
                                             <div class="intro__item-content">
-                                                <h2 class="intro__item-content--lable">Da Nang</h2>
+                                                <h3 class="intro__item-content--lable">Ha Noi</h3>
                                                 <p class="intro__item-content--price">From $1450</p>
                                                 <div class="intro__item-content--rating">
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
@@ -319,9 +313,7 @@
                                                 </div>
                                             </div>
                                             <div class="intro__item-content--button">
-                                                <a href="#" class="intro__item-content--link">
-                                                    SEE MORE
-                                                </a> 
+                                                <a href="#!" class="intro__item-content--link">SEE MORE</a> 
                                             </div>
                                         </div>
                                     </div>
@@ -331,12 +323,10 @@
                                             <div class="intro__item-content--overlay"></div>
                                             <div class="intro__item-content--img" style="background-image: url(./assets/img/intro_3.jpg);"></div>
                                             <div class="intro__item-content--time">
-                                               <span class="intro__item-content--time--text">
-                                                May 25th - June 01st
-                                               </span>
+                                               <span class="intro__item-content--time--text">May 25th - June 01st</span>
                                             </div>
                                             <div class="intro__item-content">
-                                                <h2 class="intro__item-content--lable">Ninh Binh</h2>
+                                                <h3 class="intro__item-content--lable">Ho Chi Minh</h3>
                                                 <p class="intro__item-content--price">From $1450</p>
                                                 <div class="intro__item-content--rating">
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
@@ -347,9 +337,7 @@
                                                 </div>
                                             </div>
                                             <div class="intro__item-content--button">
-                                                <a href="#" class="intro__item-content--link">
-                                                    SEE MORE
-                                                </a> 
+                                                <a href="#!" class="intro__item-content--link">SEE MORE</a> 
                                             </div>
                                         </div>
                                     </div>
@@ -365,7 +353,7 @@
                     <div class="grid wide">
                         <div class="container__content-intro">
                             <div class="container__content-booking">
-                                <h1 class="container__content-title">MALDIVES DELUXE PACKAGE</h1>
+                                <h2 class="container__content-title">MALDIVES DELUXE PACKAGE</h2>
                                 <div class="container__content-rating">
                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
@@ -373,14 +361,12 @@
                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                 </div>
-                                <div class="container__content-text">
+                                <p class="container__content-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.      
                                     Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
-                                </div>
+                                </p>
                                 <div class="container__content-button">
-                                    <a href="#" class="intro__item-content--link">
-                                        BOOK NOW
-                                    </a> 
+                                    <a href="#!" class="intro__item-content--link">BOOK NOW</a> 
                                 </div>
                             </div>
                         </div>
@@ -391,22 +377,21 @@
                 <div class="container__content-layout">
                     <div class="grid wide">
                         <div class="container__content-intro">
-                            <h1 class="container__content-intro--title">THE BEST OFFERS WITH ROOMS</h1>
+                            <h2 class="container__content-intro--title">THE BEST OFFERS WITH ROOMS</h2>
                             <div class="container__content-intro--list">
                                 <div class="row">
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 c-12">
                                         <div class="container__offer--item">
                                             <div class="container__offer--image">
-                                                <img src="./assets/img/offer_1.jpg" alt="" class="container__offer--image-img">
-                                                <a href="" class="container__offer--image-text">GRAND CASTLE</a>
+                                                <div class="container__offer--image-img" style="background-image: url(./assets/img/offer_1.jpg);"></div>
+                                                <a href="#!" class="container__offer--image-text">GRAND CASTLE</a>
                                             </div>
-                                            
+
                                             <div class="container__offer-content">
                                                 <div class="container__offer-content--bill">
-                                                    <h2 class="container__offer-content--price">$70</h2>
+                                                    <p class="container__offer-content--price">$70</p>
                                                     <p class="container__offer-content--unit">per night</p>
                                                 </div>
-
                                                 <div class="container__offer-content--rating">
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
@@ -414,37 +399,32 @@
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                 </div>
-
-                                                <span class="container__offer-content--text">
+                                                <p class="container__offer-content--text">
                                                     Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                                </span>
-
+                                                </p>
                                                 <div class="container__offer-content--icon">
                                                     <i class="fa-solid fa-signs-post"></i>
                                                     <i class="fa-regular fa-clock"></i>
                                                     <i class="fa-solid fa-bicycle"></i>
                                                     <i class="fa-solid fa-sailboat"></i>
                                                 </div>
-                                                <a href="" class="container__offer-content--more">READ MORE</a>
+                                                <a href="#!" class="container__offer-content--more">READ MORE</a>
                                             </div>
                                         </div>
                                     </div>
     
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 c-12">
                                         <div class="container__offer--item">
                                             <div class="container__offer--image">
-                                                <img src="./assets/img/offer_2.jpg" alt="" class="container__offer--image-img">
-                                                <span class="container__offer--image-text">
-                                                    GRAND CASTLE
-                                                </span>
+                                                <div class="container__offer--image-img" style="background-image: url(./assets/img/offer_2.jpg);"></div>
+                                                <a href="#!" class="container__offer--image-text">GRAND CASTLE</a>
                                             </div>
                                             
                                             <div class="container__offer-content">
                                                 <div class="container__offer-content--bill">
-                                                    <h2 class="container__offer-content--price">$60</h2>
+                                                    <p class="container__offer-content--price">$60</p>
                                                     <p class="container__offer-content--unit">per night</p>
                                                 </div>
-
                                                 <div class="container__offer-content--rating">
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
@@ -452,37 +432,32 @@
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                 </div>
-
-                                                <span class="container__offer-content--text">
+                                                <p class="container__offer-content--text">
                                                     Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                                </span>
-
+                                                </p>
                                                 <div class="container__offer-content--icon">
                                                     <i class="fa-solid fa-signs-post"></i>
                                                     <i class="fa-regular fa-clock"></i>
                                                     <i class="fa-solid fa-bicycle"></i>
                                                     <i class="fa-solid fa-sailboat"></i>
                                                 </div>
-                                                <a href="" class="container__offer-content--more">READ MORE</a>
+                                                <a href="#!" class="container__offer-content--more">READ MORE</a>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 c-12">
                                         <div class="container__offer--item">
-                                            <div class="container__offer--image">
-                                                <img src="./assets/img/offer_3.jpg" alt="" class="container__offer--image-img">
-                                                <span class="container__offer--image-text">
-                                                    GRAND CASTLE
-                                                </span>
+                                            <div class="container__offer--image">          
+                                                <div class="container__offer--image-img" style="background-image: url(./assets/img/offer_3.jpg);"></div>
+                                                <a href="#!" class="container__offer--image-text">GRAND CASTLE</a>
                                             </div>
                                             
                                             <div class="container__offer-content">
                                                 <div class="container__offer-content--bill">
-                                                    <h2 class="container__offer-content--price">$50</h2>
+                                                    <p class="container__offer-content--price">$50</p>
                                                     <p class="container__offer-content--unit">per night</p>
                                                 </div>
-
                                                 <div class="container__offer-content--rating">
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
@@ -490,37 +465,32 @@
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                 </div>
-
-                                                <span class="container__offer-content--text">
+                                                <p class="container__offer-content--text">
                                                     Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                                </span>
-
+                                                </p>
                                                 <div class="container__offer-content--icon">
                                                     <i class="fa-solid fa-signs-post"></i>
                                                     <i class="fa-regular fa-clock"></i>
                                                     <i class="fa-solid fa-bicycle"></i>
                                                     <i class="fa-solid fa-sailboat"></i>
                                                 </div>
-                                                <a href="" class="container__offer-content--more">READ MORE</a>
+                                                <a href="#!" class="container__offer-content--more">READ MORE</a>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col l-6">
+                                    <div class="col l-6 m-12 c-12">
                                         <div class="container__offer--item">
                                             <div class="container__offer--image">
-                                                <img src="./assets/img/offer_4.jpg" alt="" class="container__offer--image-img">
-                                                <span class="container__offer--image-text">
-                                                    GRAND CASTLE
-                                                </span>
+                                                <div class="container__offer--image-img" style="background-image: url(./assets/img/offer_4.jpg);"></div>
+                                                <a href="#!" class="container__offer--image-text">GRAND CASTLE</a>
                                             </div>
                                             
                                             <div class="container__offer-content">
                                                 <div class="container__offer-content--bill">
-                                                    <h2 class="container__offer-content--price">$70</h2>
+                                                    <p class="container__offer-content--price">$70</p>
                                                     <p class="container__offer-content--unit">per night</p>
                                                 </div>
-
                                                 <div class="container__offer-content--rating">
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
@@ -528,18 +498,16 @@
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                     <i class="intro_item-content--icon fa-solid fa-star"></i>
                                                 </div>
-
-                                                <span class="container__offer-content--text">
+                                                <p class="container__offer-content--text">
                                                     Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                                </span>
-
+                                                </p>
                                                 <div class="container__offer-content--icon">
                                                     <i class="fa-solid fa-signs-post"></i>
                                                     <i class="fa-regular fa-clock"></i>
                                                     <i class="fa-solid fa-bicycle"></i>
                                                     <i class="fa-solid fa-sailboat"></i>
                                                 </div>
-                                                <a href="" class="container__offer-content--more">READ MORE</a>
+                                                <a href="#!" class="container__offer-content--more">READ MORE</a>
                                             </div>
                                         </div>
                                     </div>
@@ -553,7 +521,7 @@
                 <div class="container__content-layout">
                     <div class="grid wide">
                         <div class="container__content-intro">
-                            <h1 class="container__content-intro--title">WHAT OUR CLIENTS SAY ABOUT US</h1>
+                            <h2 class="container__content-intro--title">WHAT OUR CLIENTS SAY ABOUT US</h2>
                             <div class="container__instructor--list">
                                 <div class="row">
                                     <div class="col l-4 m-6 c-0">
@@ -564,15 +532,14 @@
                                             <div class="container__instructor--img" style="background-image: url(./assets/img/instructor_1.jpg);"></div>
                                             <div class="container__instructor--content">
                                                 <div class="container__instructor--info">
-                                                    <span class="container__instructor--name">CALA SMITH</span>
-                                                    <span class="container__instructor--date">May 24, 2022</span>
+                                                    <p class="container__instructor--name">HUE</p>
+                                                    <p class="container__instructor--date">May 24, 2022</p>
                                                 </div>
-                                                
                                                 <div class="container__instructor--decrip">
-                                                    <span class="container__instructor--title">" Best holliday ever "</span>
-                                                    <span class="container__instructor--text">
+                                                    <p class="container__instructor--title">" Best holliday ever "</p>
+                                                    <p class="container__instructor--text">
                                                         Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
-                                                    </span> 
+                                                    </p> 
                                                 </div>
                                             </div>
                                         </div>
@@ -586,15 +553,14 @@
                                             <div class="container__instructor--img" style="background-image: url(./assets/img/instructor_2.jpg);"></div>
                                             <div class="container__instructor--content">
                                                 <div class="container__instructor--info">
-                                                    <span class="container__instructor--name">CALA SMITH</span>
-                                                    <span class="container__instructor--date">May 24, 2022</span>
+                                                    <p class="container__instructor--name">CAO BANG</p>
+                                                    <p class="container__instructor--date">May 24, 2022</p>
                                                 </div>
-                                                
                                                 <div class="container__instructor--decrip">
-                                                    <span class="container__instructor--title">" Best holliday ever "</span>
-                                                    <span class="container__instructor--text">
+                                                    <p class="container__instructor--title">" Best holliday ever "</p>
+                                                    <p class="container__instructor--text">
                                                         Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
-                                                    </span> 
+                                                    </p> 
                                                 </div>
                                             </div>
                                         </div>
@@ -608,15 +574,14 @@
                                             <div class="container__instructor--img" style="background-image: url(./assets/img/instructor_3.jpg);"></div>
                                             <div class="container__instructor--content">
                                                 <div class="container__instructor--info">
-                                                    <span class="container__instructor--name">CALA SMITH</span>
-                                                    <span class="container__instructor--date">May 24, 2022</span>
+                                                    <p class="container__instructor--name">YEN BAI</p>
+                                                    <p class="container__instructor--date">May 24, 2022</p>
                                                 </div>
-                                                
                                                 <div class="container__instructor--decrip">
-                                                    <span class="container__instructor--title">" Best holliday ever "</span>
-                                                    <span class="container__instructor--text">
+                                                    <p class="container__instructor--title">" Best holliday ever "</p>
+                                                    <p class="container__instructor--text">
                                                         Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.
-                                                    </span> 
+                                                    </p> 
                                                 </div>
                                             </div>
                                         </div>
@@ -631,101 +596,86 @@
                 <div class="container__content-layout">
                     <div class="grid wide">
                         <div class="container__content-intro">
-                            <h1 class="container__content-intro--title">TRENDING NOW</h1>
+                            <h2 class="container__content-intro--title">TRENDING NOW</h2>
                             <div class="container__trending--list">
                                 <div class="row">
                                     <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
-                                            <img src="./assets/img/trending_1.png" alt="" class="container__trending--img">
-                                            
+                                            <img src="./assets/img/trending_1.png" alt="" class="container__trending--img">  
                                             <div class="container__trending--content">
-                                                <a href="" class="container__trending--name">GRAND HOTEL</a>
-                                                <span class="container__trending--price">From $182</span>
-                                                <span class="container__trending--address">MADRID, SPAIN</span>
+                                                <a href="#!" class="container__trending--name">GRAND HOTEL</a>
+                                                <p class="container__trending--price">From $182</p>
+                                                <p class="container__trending--address">MADRID, SPAIN</p>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_2.png" alt="" class="container__trending--img">
-                                            
                                             <div class="container__trending--content">
-                                                <a href="" class="container__trending--name">MARS HOTEL</a>
-                                                <span class="container__trending--price">From $182</span>
-                                                <span class="container__trending--address">MADRID, SPAIN</span>
+                                                <a href="#!" class="container__trending--name">MARS HOTEL</a>
+                                                <p class="container__trending--price">From $182</p>
+                                                <p class="container__trending--address">MADRID, SPAIN</p>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_3.png" alt="" class="container__trending--img">
-                                            
                                             <div class="container__trending--content">
-                                                <a href="" class="container__trending--name">QUEEN HOTEL</a>
-                                                <span class="container__trending--price">From $182</span>
-                                                <span class="container__trending--address">MADRID, SPAIN</span>
+                                                <a href="#!" class="container__trending--name">QUEEN HOTEL</a>
+                                                <p class="container__trending--price">From $182</p>
+                                                <p class="container__trending--address">MADRID, SPAIN</p>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_4.png" alt="" class="container__trending--img">
-                                            
                                             <div class="container__trending--content">
-                                                <a href="" class="container__trending--name">KING HOTEL</a>
-                                                <span class="container__trending--price">From $182</span>
-                                                <span class="container__trending--address">MADRID, SPAIN</span>
+                                                <a href="#!" class="container__trending--name">KING HOTEL</a>
+                                                <p class="container__trending--price">From $182</p>
+                                                <p class="container__trending--address">MADRID, SPAIN</p>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
-                                            <img src="./assets/img/trending_5.png" alt="" class="container__trending--img">
-                                            
+                                            <img src="./assets/img/trending_5.png" alt="" class="container__trending--img">  
                                             <div class="container__trending--content">
-                                                <a href="" class="container__trending--name">GARDEN HOTEL</a>
-                                                <span class="container__trending--price">From $182</span>
-                                                <span class="container__trending--address">MADRID, SPAIN</span>
+                                                <a href="#!" class="container__trending--name">GARDEN HOTEL</a>
+                                                <p class="container__trending--price">From $182</p>
+                                                <p class="container__trending--address">MADRID, SPAIN</p>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_6.png" alt="" class="container__trending--img">
-                                            
                                             <div class="container__trending--content">
-                                                <a href="" class="container__trending--name">MERONA HOTEL</a>
-                                                <span class="container__trending--price">From $182</span>
-                                                <span class="container__trending--address">MADRID, SPAIN</span>
+                                                <a href="#!" class="container__trending--name">MERONA HOTEL</a>
+                                                <p class="container__trending--price">From $182</p>
+                                                <p class="container__trending--address">MADRID, SPAIN</p>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_7.png" alt="" class="container__trending--img">
-                                            
                                             <div class="container__trending--content">
-                                                <a href="" class="container__trending--name">SAPPHIRE HOTEL</a>
-                                                <span class="container__trending--price">From $182</span>
-                                                <span class="container__trending--address">MADRID, SPAIN</span>
+                                                <a href="#!" class="container__trending--name">SAPPHIRE HOTEL</a>
+                                                <p class="container__trending--price">From $182</p>
+                                                <p class="container__trending--address">MADRID, SPAIN</p>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col l-3 m-6 c-12">
                                         <div class="container__trending--item">
                                             <img src="./assets/img/trending_8.png" alt="" class="container__trending--img">
-                                            
                                             <div class="container__trending--content">
-                                                <a href="" class="container__trending--name">GOLDEN HOTEL</a>
-                                                <span class="container__trending--price">From $182</span>
-                                                <span class="container__trending--address">MADRID, SPAIN</span>
+                                                <a href="#!" class="container__trending--name">GOLDEN HOTEL</a>
+                                                <p class="container__trending--price">From $182</p>
+                                                <p class="container__trending--address">MADRID, SPAIN</p>
                                             </div>
                                         </div>
                                     </div>
@@ -745,43 +695,37 @@
                                 </div>
                                 <div class="col l-6 m-12 c-12">
                                     <div class="container__contact--form">
-                                        <span class="container__contact--form-lable">GET IN TOUCH</span>
+                                        <p class="container__contact--form-lable">GET IN TOUCH</p>
 
-                                        <form action="" class="container__contact--form-content">
+                                        <form action="input_info" class="container__contact--form-content">
                                             <div class="row">
                                                 <div class="container__contact--form-name col l-6 m-6 c-12">
                                                     <input type="text" class="container__contact--form-item container__contact--form-name" placeholder="Name" required="required" data-error="Name is required.">
                                                 </div>
-
                                                 <div class="col l-6 m-6 c-12">
-                                                    <input type="text" class="container__contact--form-item container__contact--form-mail" placeholder="E-Mail" required="required" data-error="Name is required.">
+                                                    <input type="text" class="container__contact--form-item container__contact--form-mail" placeholder="E-Mail" required="required" data-error="E-Mail is required.">
                                                 </div>    
                                             </div>
                                             <div class="row">
                                                 <div class="col l-12 m-12 c-12">
-                                                    <input type="text" class="container__contact--form-item container__contact--form-subject" placeholder="Subject" required="required" data-error="Name is required.">
+                                                    <input type="text" class="container__contact--form-item container__contact--form-subject" placeholder="Subject" required="required" data-error="Subject is required.">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col l-12 m-12 c-12">
-                                                    <textarea type="text" class="container__contact--form-item container__contact--form-massage" placeholder="Massage" required="required" data-error="Name is required."></textarea>
+                                                    <textarea class="container__contact--form-item container__contact--form-massage" placeholder="Massage" required="required" data-error="Massage is required." rows="5" minlength="50"></textarea>
                                                 </div>
                                             </div>
-                                            
                                         </form>
 
                                         <div class="container__contact--form-button">
-                                            <a href="#" class="container__input-search">
-                                                SEND MASSAGE
-                                            </a> 
+                                            <a href="#!" class="container__input-search">SEND MASSAGE</a> 
                                         </div>
                                     </div>
-                                   
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -793,29 +737,29 @@
                         <div class="footer__about">
                             <div class="footer__about--logo">
                                 <img src="./assets/img/logo.png" alt="" class="footer__about--logo-img">
-                                <span class="footer__about--logo-lable">TRAVELIX</span>
+                                <p class="footer__about--logo-lable">TRAVELIX</p>
                             </div>
-                            <span class="footer__about--content">
+                            <p class="footer__about--content">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.
-                            </span>
+                            </p>
                             <ul class="footer__about--list">
                                 <li class="footer__about--item">
-                                    <a href="" class="footer__about--link">
+                                    <a href="#!" class="footer__about--link">
                                         <i class="fa-brands fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li class="footer__about--item">
-                                    <a href="" class="footer__about--link">
+                                    <a href="#!" class="footer__about--link">
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li class="footer__about--item">
-                                    <a href="" class="footer__about--link">
+                                    <a href="#!" class="footer__about--link">
                                         <i class="fa-brands fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li class="footer__about--item">
-                                    <a href="" class="footer__about--link">
+                                    <a href="#!" class="footer__about--link">
                                         <i class="fa-brands fa-linkedin-in"></i>
                                     </a>
                                 </li>
@@ -826,30 +770,29 @@
                     <div class="col l-3 m-12 c-12">
                         <div class="footer__blog">
                             <div class="footer__blog--lable">
-                                <span class="footer__blog--text">BLOG POSTS</span>
+                                <p class="footer__blog--text">BLOG POSTS</p>
                             </div>
+                            
                             <div class="footer__blog--list">
                                 <div class="footer__blog--item">
                                     <img src="./assets/img/footer_blog_1.jpg" alt="" class="footer__blog--item-img">
                                     <div class="footer__blog--item-content">
-                                        <a href="" class="footer__blog--item-text">Travel with us this year</a>
-                                        <span class="footer__blog--item-date">Nov 29, 2022</span>
+                                        <a href="#!" class="footer__blog--item-text">Travel with us this year</a>
+                                        <p class="footer__blog--item-date">Nov 29, 2022</p>
                                     </div>
                                 </div>
-
                                 <div class="footer__blog--item">
                                     <img src="./assets/img/footer_blog_2.jpg" alt="" class="footer__blog--item-img">
                                     <div class="footer__blog--item-content">
-                                        <a href="" class="footer__blog--item-text">Travel with us this year</a>
-                                        <span class="footer__blog--item-date">Nov 29, 2022</span>
+                                        <a href="#!" class="footer__blog--item-text">Travel with us this year</a>
+                                        <p class="footer__blog--item-date">Nov 29, 2022</p>
                                     </div>
                                 </div>
-
                                 <div class="footer__blog--item">
                                     <img src="./assets/img/footer_blog_3.jpg" alt="" class="footer__blog--item-img">
                                     <div class="footer__blog--item-content">
-                                        <a href="" class="footer__blog--item-text">Travel with us this year</a>
-                                        <span class="footer__blog--item-date">Nov 29, 2022</span>
+                                        <a href="#!" class="footer__blog--item-text">Travel with us this year</a>
+                                        <p class="footer__blog--item-date">Nov 29, 2022</p>
                                     </div>
                                 </div>
                             </div>
@@ -859,32 +802,28 @@
                     <div class="col l-3 m-12 c-12">
                         <div class="footer__tags">
                             <div class="footer__tags--lable">
-                                <span class="footer__tags--text">TAGS</span>
+                                <p class="footer__tags--text">TAGS</p>
                             </div>
+
                             <div class="footer__tags--list">
                                 <div class="row">
                                     <div class="footer__tags--item">
-                                        <span class="footer__tags--item-text">design</span>
+                                        <p class="footer__tags--item-text">design</p>
                                     </div>
-    
                                     <div class="footer__tags--item">
-                                        <span class="footer__tags--item-text">fashion</span>
+                                        <p class="footer__tags--item-text">fashion</p>
                                     </div>
-    
                                     <div class="footer__tags--item">
-                                        <span class="footer__tags--item-text">music</span>
+                                        <p class="footer__tags--item-text">music</p>
                                     </div>
-    
                                     <div class="footer__tags--item">
-                                        <span class="footer__tags--item-text">video</span>
+                                        <p class="footer__tags--item-text">video</p>
                                     </div>
-    
                                     <div class="footer__tags--item">
-                                        <span class="footer__tags--item-text">travel</span>
+                                        <p class="footer__tags--item-text">travel</p>
                                     </div>
-    
                                     <div class="footer__tags--item">
-                                        <span class="footer__tags--item-text">party</span>
+                                        <p class="footer__tags--item-text">party</p>
                                     </div>
                                 </div>
                             </div>
@@ -894,35 +833,34 @@
                     <div class="col l-3 m-12 c-12">
                         <div class="footer__contact">
                             <div class="footer__contact--lable">
-                                <span class="footer__contact--text">CONTACT INFO</span>
+                                <p class="footer__contact--text">CONTACT INFO</p>
                             </div>
+
                             <div class="footer__contact--list">
                                 <div class="footer__contact--item">
                                     <i class="footer__contact--item-icon fa-solid fa-location-dot"></i>
-                                    <span class="footer__contact--item-text">576 Nguyễn Tri Phương</span>
+                                    <p class="footer__contact--item-text">576 Nguyễn Tri Phương</p>
                                 </div>
-
                                 <div class="footer__contact--item">
                                     <i class="footer__contact--item-icon fa-solid fa-phone"></i>
-                                    <span class="footer__contact--item-text">0776974310</span>
+                                    <a href="tel:0776974310" class="footer__contact--item-text">0776974310</a>
                                 </div>
-
                                 <div class="footer__contact--item">
                                     <i class="footer__contact--item-icon fa-solid fa-envelope-open-text"></i>
-                                    <span class="footer__contact--item-text">tannang09032002@gmail.com</span>
+                                    <a href="mailto:tannang09032002@gmail.com" class="footer__contact--item-text">tannang09032002@gmail.com</a>
                                 </div>
-
                                 <div class="footer__contact--item">
                                     <i class="footer__contact--item-icon fa-solid fa-earth-americas"></i>
-                                    <span class="footer__contact--item-text">www.colorlib.com</span>
+                                    <a href="https://www.facebook.com/tn.9.3.02/" target="_blank" class="footer__contact--item-text">facebook.com/tn.9.3.02/</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="footer__support">
-                        <span class="footer__support--text">Copyright ©2022 All rights reserved | This template is made with  by Colorlib</span>
+                        <p class="footer__support--text">Copyright ©2022 All rights reserved | This template is made with  by Colorlib</p>
                     </div>
                 </div>
             </div>

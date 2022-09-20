@@ -22,7 +22,7 @@
 .header__info-phone {
     color: var(--white-color);
     display: inline-block;
-    margin-right: 36px;
+    margin: 0 36px 0 0;
     line-height: 36px;
     font-size: 1rem;
     font-weight: 500;
@@ -117,7 +117,7 @@
 .header__logo-lable {
     display: block;
     color: var(--white-color);
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 800;
     line-height: 3rem;
 }
@@ -127,6 +127,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    padding-right: 180px;
 }
 
 .header__navbar-list {
@@ -175,6 +176,8 @@
 }
 
 /* Heaeder Search */
+
+
 .header__search-icon {
     font-size: 1.8rem;
     color: var(--white-color);
@@ -221,7 +224,7 @@
 
 /* Header Subnav Layout */
 .header__subNavbar--layout {
-    background: linear-gradient(to right, #fa9e1b, #8d4fff);    
+    background: linear-gradient(to right, #fa9e1b, #8d4fff);
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -237,30 +240,37 @@
     transition: all 500ms ease;
 }
 
+.header__subNavbar--layout-img {
+    zoom: 1.2;
+    margin-top: -30px;
+}
+
+
 .header__subNavbar--layout-content {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.header__subNavbar--layout-content span {
+.header__subNavbar--layout-list {
+    padding: 0;
+}
+
+.header__subNavbar--layout-item {
     color: var(--white-color);
     font-size: 6rem;
     margin-top: 30px;
     text-align: center;
     font-family: 'Qwigley', cursive;
     font-weight: 600;
+    list-style: none;
 }
 
-.header__subNavbar--layout-img {
-    zoom: 1.2;
-    margin-top: -30px;
-}
-
-.header__subNavbar--layout-content span:hover {
+.header__subNavbar--layout-item:hover {
     text-decoration: line-through;
     cursor: pointer;
 }
+
 
 .header__subNavbar--layout-icon {
     position: absolute;
@@ -326,6 +336,9 @@
 .container__slider-lable--styte {
     font-family: 'Qwigley', cursive;
     font-size: 14rem;
+    color: var(--white-color);
+    font-weight: 800;
+    text-align: center;
 }
 
 .container__slider-button {
@@ -405,12 +418,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.container__input-item {
+    width: 100%;
 }
 
 .container__input-item-lable {
     color: var(--white-color);
     font-size: 1.4rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .container__input-item-select,
@@ -512,13 +531,15 @@
 
 .container__search-link {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container__search-item-lable {
     color: var(--black-color);
     font-size: 1.4rem;
     font-weight: 700;
-    align-items: center;
 }
 
 .container__search-item-icon {
@@ -526,7 +547,6 @@
     color: var(--primary-orange-color);
     font-size: 1.8rem;
     font-weight: 700;
-    align-items: center;
 }
 
 /* Container Content */
@@ -748,18 +768,26 @@
     width: 100%;
     display: flex;
     padding: 30px 0;
+    height: 410px;
 }
 
 .container__offer--image {
     width: 50%;
     position: relative;
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
 
 .container__offer--image-img {
-    width: 100%;
-    height: 350px;
     box-shadow: 0 2px 2px #929191;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
 }
 
 .container__offer--image-text {
@@ -773,13 +801,15 @@
     text-decoration: none;
     font-weight: 700;
     cursor: pointer;
+    z-index: 2;
 }
 
 .container__offer-content {
     width: 50%;
-    height: 30px;
+    height: 350px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .container__offer-content--bill {
@@ -792,6 +822,7 @@
     font-size: 2.8rem;
     margin: 0;
     line-height: 2.8rem;
+    font-weight: 700;
 }
 
 .container__offer-content--unit {
@@ -820,6 +851,7 @@
     line-height: 3rem;
     width: 100%;
     display: block;
+    margin: 0;
 }
 
 .container__offer-content--icon {
@@ -847,6 +879,9 @@
 }
 
 /* Container instructor */
+.container__instructor--list {
+    padding-top: 60px;
+}
 
 .container__instructor--item {
     width: 100%;
@@ -896,13 +931,14 @@
     font-size: 1.6rem;
     display: block;
     font-weight: 700;
+    margin: 0;
 }
 
 .container__instructor--date {
     display: block;
     text-align: left;
     font-size: 1.2rem;
-    margin-top: 4px;
+    margin: 6px 0 0 0;
 }
 
 .container__instructor--decrip {
@@ -922,12 +958,13 @@
     width: 100%;
     display: block;
     text-align: start;
+    margin: 0;
 }
 
 .container__instructor--text {
     font-size: 1.6rem;
     color: var(--white-color);
-    margin-top: 11px;
+    margin: 16px 0 0 0;
     display: block;
     text-align: start;
     line-height: 3rem;
@@ -960,8 +997,9 @@
 .container__trending--name {
     text-decoration: none;
     color: var(--black-color);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
+    text-align: left;
 }
 
 .container__trending--name:hover {
@@ -975,6 +1013,7 @@
     font-size: 1.4rem;
     font-weight: 700;
     padding: 15px 0;
+    margin: 0;
 }
 
 .container__trending--address {
@@ -982,6 +1021,8 @@
     text-align: start;
     color: #929191;
     font-size: 1.4rem;
+    margin: 0;
+
 }
 
 /* Container Contact */
@@ -1073,6 +1114,7 @@
     height: 50px;
     margin-bottom: 40px;
     cursor: pointer;
+    display: flex;
 }
 
 .footer__about--logo-lable {
@@ -1080,6 +1122,7 @@
     color: var(--white-color);
     font-weight: 800;
     padding-left: 10px;
+    margin: 28px 0 0 0;
 }
 
 .footer__about--content {
@@ -1125,7 +1168,7 @@
     color: var(--white-color);
     font-size: 1.6rem;
     font-weight: 700;
-
+    margin: 0;
 }
 
 .footer__blog--item {
@@ -1159,6 +1202,7 @@
 .footer__blog--item-date {
     color: var(--primary-orange-color);
     font-size: 1.2rem;
+    margin: 0;
 }
 
 /* Footer tags */
@@ -1177,6 +1221,7 @@
     color: var(--white-color);
     font-size: 1.6rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .footer__tags--item {
@@ -1198,6 +1243,7 @@
     padding-left: 25px;
     padding-right: 25px;
     border: 1px solid var(--primary-orange-color);
+    margin: 0;
 }
 
 
@@ -1218,10 +1264,12 @@
     color: var(--white-color);
     font-size: 1.6rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .footer__contact--item {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    display: flex;
 }
 
 .footer__contact--item-icon {
@@ -1233,6 +1281,8 @@
 .footer__contact--item-text {
     color: var(--white-color);
     font-size: 1.4rem;
+    margin: 0;
+    text-decoration: none;
 }
 
 .footer__contact--item-text:hover {
